@@ -3,7 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 body {
   font-family: "sailor-beware", "Papyrus", "Arial Narrow";
-  background-image: url("<%= asset_path ('rocks.jpg')%>");
+  background-image: url(asset_path('rocks.jpg'));
 }
 
 img {
