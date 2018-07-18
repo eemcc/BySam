@@ -6,8 +6,8 @@
 <table>
   <div class="container-fluid">
     <div class=row>
-      <% @products.each do |product| %>
-        <div class= "col-md-4" id=items>
+        <% @products.each do |product| %>
+        <div class= "col-md-3 col-xs-12" id="items">
           <%= image_tag(product.image_url, class: "img-fluid") %>
           <h2><%= product.name %></h2>
           <p><%= product.description %></p>
@@ -17,8 +17,8 @@
           <span><%= link_to 'Edit', edit_product_path(product) %></span>
           <span><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></span>
         </div> <!--column-->
+        <% end %>
     </div> <!--row-->
-    <% end %>
   </div> <!--container-->
 </table>
 
