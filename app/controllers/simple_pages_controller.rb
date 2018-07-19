@@ -1,4 +1,5 @@
 class SimplePagesController < ApplicationController
-  def index
+  def landing_page
+    @featuring_product = Product.fourth
   end
 end
