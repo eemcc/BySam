@@ -1,2 +1,19 @@
-<h2>Featured Product:<h2>
-<%= @featured_product.name %>
+<p id="notice"><%= notice %></p>
+
+<title>Products</title>
+  <h2>Featured Products</h2>
+    <%= if @featured_product != nil %>
+      <%= @featured_product.name %>
+    <%= end %>
+  <div class="container-fluid">
+    <div class="carousel-inner">
+      <% @products.each do |product| %>
+        <div class="carousel-item <%= " active" if product == @products.first %>">
+          <%= image_tag(product.image_url, class: "img-fluid") %>
+          <div class="carousel-caption d-none d-md-block">
+            <h2><%= product.name %></h2>
+          </div>
+        </div>
+      <% end %>
+    </div> <!--row-->
+  </div> <!--container-->

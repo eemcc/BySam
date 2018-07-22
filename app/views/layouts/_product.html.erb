@@ -1,0 +1,8 @@
+<div class="carousel-item <%= " active" if product == @products.first %>">
+  <%= image_tag(product.image_url, class: "img-fluid") %>
+  <div class="carousel-caption d-none d-md-block">
+    <h2><%= link_to_product.name, product %></h2>
+    <p><%= product.description %></p>
+    <strong>$ <%= product.price %></strong>
+  </div>
+</div>
