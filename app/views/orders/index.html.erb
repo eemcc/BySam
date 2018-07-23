@@ -1,1 +1,10 @@
-
+<div class= "row">
+  <% @orders.each do |order|%>
+    <div class= "col-sm">
+      <h1>Order #<%= order.id %></h1>
+      <%= link_to order.product.name, order %>
+      <p><%= order.product.description %></p>
+      <p>$ <%= order.product.price %></p>
+    </div> <!--column-->
+  <%end%>
+</div> <!--row-->
