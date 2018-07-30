@@ -7,7 +7,7 @@
   <div class="container-fluid">
     <div class=row>
         <% @products.each do |product| %>
-        <div class= "col-md-3 col-xs-12" id="items">
+        <div class= "col-md-4 col-s-12" id="items">
           <%= image_tag(product.image_url, class: "img-fluid") %>
           <h2><%= product.name %></h2>
           <p><%= product.description %></p>
@@ -21,6 +21,10 @@
     </div> <!--row-->
   </div> <!--container-->
 </table>
+
+<div class="learn">
+  <%= link_to "Learn More", simple_pages_about_url%>
+</div> <!--learn more-->
 
 <br>
 
