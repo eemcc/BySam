@@ -25,6 +25,15 @@
             <span class="icon-bar"></span>
           </button>
         </div>
+        <form class="navbar-form navbar-left" role="search">
+          <div class="form-group" class="btn-group btn-group-lg" role="group">
+          <%= form_with(url: products_path, method: 'get', local: true) do |form| %>
+            <%= form.label :q, 'Search for:' %>
+            <%= form.text_field :q, id: 'q', value: params[:q] %>
+            <%= form.submit 'Search' %>
+          <% end %>
+          </div>
+        </form>
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav navbar-left">
             <p><%= link_to "Home", simple_pages_landing_page_path %> </p>

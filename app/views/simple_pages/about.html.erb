@@ -1,2 +1,15 @@
 <h1>About Sam</h1>
 <p>I grew up sailing in Martha's Vineyard. With my knot tying skills I found that I could create beautiful jewelry and decided to make it more than just a hobby. I also create molded pieces and am open to requests.</p>
+
+<form class="navbar-form navbar-left" role="login" id=login>
+  <div class="form-group" class="btn-group btn-group-lg" role="group">
+  <%= form_with(url: products_path, method: 'get', local: true) do |form| %>
+    <%= form.label :q, 'Admin Login:' %>
+    <%= form.label :q, 'Username:' %>
+    <%= form.text_field :q, id: 'q', value: params[:q] %>
+    <%= form.label :q, 'Password:' %>
+    <%= form.text_field :q, id: 'q', value: params[:q] %>
+    <%= form.submit 'Submit' , class: "btn btn-default btn-primary" %>
+  <% end %>
+  </div>
+</form>
