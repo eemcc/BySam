@@ -1,5 +1,5 @@
 <h1>Contact Me</h1>
-<p>JewelryBySam@gmail.com</p>
+
 <%= flash[:notice] %>
 
 <%= form_with(url:"/simple_pages/thank_you", id:"contactform", method: "post", local: true) do |form| %>
@@ -16,5 +16,5 @@
       <%= form.text_field :message, class: "form-control", placeholder: "Enter Message", rows: 5 %>
     </div>
   </div> <!--row-->
-  <%= form.submit "Send", class: "form_label"%>
+  <%= form.submit "Send", class: "btn btn-default btn-primary"%>
 <% end %>
