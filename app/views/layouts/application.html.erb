@@ -1,5 +1,13 @@
 <!DOCTYPE html>
-<p id="notice"><%= notice %></p>
+
+<% if notice %>
+  <p id="notice"><%= notice %></p>
+<% end %>
+
+<% if alert %>
+  <p id="alert"><%= alert %></p>
+<% end %>
+
 <html>
   <head>
     <title>BySam</title>
@@ -42,7 +50,7 @@
             <p><%= link_to "About", simple_pages_about_path %> </p>
             <p><%= link_to "Contact", simple_pages_contact_path %> </p>
           </ul>
-          <ul class="navbar-nav ml auto">
+          <ul class="navbar-nav ml auto" id="log">
             <% if user_signed_in?%>
             <li class="nav-item">
               <%= link_to('Logout', destroy_user_session_path, method: :delete,
