@@ -21,8 +21,8 @@
     </div> <!--row-->
     <div class="reviews">
       <h2>Customer Reviews</h2>
-      <%= @product.highest_rating_comment %>
-      <%= @product.lowest_rating_comment %>
+      <%= comments.rating_desc.first %>
+      <%= comments.rating_asc.first %>
     </div> <!--reviews-->
   </div> <!--container-->
 </table>
