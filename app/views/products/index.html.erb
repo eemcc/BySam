@@ -21,8 +21,12 @@
     </div> <!--row-->
     <div class="reviews">
       <h2>Customer Reviews</h2>
-      <%= comments.rating_desc.first %>
-      <%= comments.rating_asc.first %>
+      <% @products.each do |product| %>
+      <div class="topreviews">
+        <p><%= comments.rating_desc.first %></p>
+        <p><%= comments.rating_asc.first %></p>
+      </div> <!--top reviews-->
+      <% end %>
     </div> <!--reviews-->
   </div> <!--container-->
 </table>
