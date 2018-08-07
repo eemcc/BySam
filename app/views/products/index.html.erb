@@ -19,6 +19,11 @@
         </div> <!--column-->
         <% end %>
     </div> <!--row-->
+    <div class="reviews">
+      <h2>Customer Reviews</h2>
+      <%= @product.highest_rating_comment %>
+      <%= @product.lowest_rating_comment %>
+    </div> <!--reviews-->
   </div> <!--container-->
 </table>
 

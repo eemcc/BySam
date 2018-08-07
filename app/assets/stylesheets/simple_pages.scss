@@ -99,13 +99,14 @@ footer {
 }
 
 #login,
-#contactform{
+#contactform {
   background-color: white;
   opacity: 0.6;
   padding: 2% !important;
   height: 40%;
   width: 40%;
 }
+
 #contactform {
   margin-left: 15%;
   width: 50%;
@@ -119,4 +120,16 @@ footer {
 }
 .container .text-muted {
   margin: 20px 200px 20px 200px;
+}
+
+.reviews {
+  background-color: white;
+  opacity: 0.6;
+  height: 100px;
+  width: 60%;
+}
+
+.reviews h2 {
+  padding-top: 2%;
+  padding-left: 2%;
 }
