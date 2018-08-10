@@ -125,11 +125,14 @@ footer {
 .reviews {
   background-color: white;
   opacity: 0.6;
-  height: 100px;
+  height: 100%;
   width: 60%;
 }
 
-.reviews h2 {
+.reviews h2,
+.reviews p {
   padding-top: 2%;
   padding-left: 2%;
+  font-size: 1em;
+  font-family:"Cinzel Decorative", "Papyrus", "Arial Narrow";
 }
