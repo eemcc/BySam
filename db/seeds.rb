@@ -17,3 +17,8 @@ Order.create(user_id: User.first.id, product_id: p1.id, total:20)
 Order.create(user_id: User.first.id, product_id: p2.id, total:20)
 Order.create(user_id: User.first.id, product_id: p3.id, total:20)
 Order.create(user_id: User.first.id, product_id: p4.id, total:20)
+
+c1 = Comment.create(product: "Black Monkeys Fist Earrings", user_id:1, body: "Not good", rating: 1)
+c2 = Comment.create(product: "White Monkeys Fist Earrings", user_id:1, body: "Great for everything!", rating: 5)
+c3 = Comment.create(product: "Purple Monkeys Fist Earrings", user_id:1, body: "Good", rating: 4)
+c4 = Comment.create(product: "Black Monkeys Fist Earrings", user_id:1, body: "OK", rating: 2)
