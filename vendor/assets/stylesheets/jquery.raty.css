@@ -44,3 +44,8 @@
 .star-half-png:before {
   content: "\f123";
 }
+
+.rating img {
+  height:5% !important;
+  width:5% !important;
+}

@@ -32,7 +32,7 @@ a {
   margin-right: 10%;
 }
 
-img {
+.img-fluid {
   height: 200px;
   width: 200px;
   margin: 1px;
@@ -122,13 +122,6 @@ footer {
   margin: 20px 200px 20px 200px;
 }
 
-.reviews {
-  background-color: white;
-  opacity: 0.6;
-  height: 100%;
-  width: 60%;
-}
-
 .reviews h2,
 .reviews p {
   padding-top: 2%;
@@ -139,4 +132,11 @@ footer {
 
 .product-reviews {
   padding: 2%;
+  background-color: white;
+  opacity: 0.6;
+  height: 100%;
+  width: 50%;
+  padding-top: 2%;
+  padding-left:2%;
+  margin-left: 15%;
 }
