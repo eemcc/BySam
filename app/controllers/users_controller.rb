@@ -73,3 +73,9 @@ class UsersController < ApplicationController
       params.require(:user).permit(:first_name, :last_name)
     end
 end
+
+class AddAdmininFlagToUsers < ActiveRecord::Migration
+  def change
+    add_column :users, :admin, :boolean, default: false, null: false
+  end
+end
