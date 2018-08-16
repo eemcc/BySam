@@ -74,7 +74,7 @@ class UsersController < ApplicationController
     end
 end
 
-class AddAdmininFlagToUsers < ActiveRecord::Migration
+class AddAdminFlagToUsers < ActiveRecord::Migration
   def change
     add_column :users, :admin, :boolean, default: false, null: false
   end
