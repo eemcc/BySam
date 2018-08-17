@@ -19,16 +19,6 @@
         </div> <!--column-->
         <% end %>
     </div> <!--row-->
-    <div class="reviews">
-      <h2>Customer Reviews <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-      <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></h2>
-      <% @products.each do |product| %>
-      <div class="topreviews">
-        <p><%= product.comments.rating_desc.first %></p>
-        <p><%= product.comments.rating_asc.first %></p>
-      </div> <!--top reviews-->
-      <% end %>
-    </div> <!--reviews-->
   </div> <!--container-->
 </table>
 
