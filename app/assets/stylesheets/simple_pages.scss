@@ -9,6 +9,16 @@ body {
   margin-left: 0px;
 }
 
+#notice,
+#alert {
+  margin-left: 2%;
+  font-size: 1.3em;
+}
+
+#alert {
+  color: red;
+}
+
 #carouselExampleIndicators {
   margin-left: 20%;
   padding-top: 2%;

@@ -7,7 +7,7 @@
   <div class="container-fluid">
     <div class=row>
         <% @products.each do |product| %>
-        <div class= "col-md-4 col-s-12" id="items">
+        <div class= "col-md-4 col-xs-12" id="items">
           <%= image_tag(product.image_url, class: "img-fluid") %>
           <h2><%= product.name %></h2>
           <p><%= product.description %></p>
