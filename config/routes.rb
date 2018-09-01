@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   get 'payments/index'
+  post 'payments/create'
   devise_for :users, path: '', path_names: { sign_in: 'login', sign_out: 'logout' }
   resources :users
   resources :products do
