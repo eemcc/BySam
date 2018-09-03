@@ -13,9 +13,11 @@
           <p><%= product.description %></p>
           <p><%= product.color %></p>
           <p><%= product.price %></p>
-          <span><%= link_to 'Show', product %></span>
-          <span><%= link_to 'Edit', edit_product_path(product) %></span>
-          <span><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></span>
+          <%=if signed_in? && current_user.admin?%>
+            <span><%= link_to 'Show', product %></span>
+            <span><%= link_to 'Edit', edit_product_path(product) %></span>
+            <span><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></span>
+          <%end%>
         </div> <!--column-->
         <% end %>
     </div> <!--row-->
