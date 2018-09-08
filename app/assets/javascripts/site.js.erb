@@ -19,5 +19,6 @@ var refreshRating = function() {
 };
 //elevateZoom
 $(document).on('turbolinks:load ajaxSuccess', function(){
+  refreshRating();
   $('.img-zoom').elevateZoom();
 });
