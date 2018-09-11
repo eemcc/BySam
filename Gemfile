@@ -82,3 +82,7 @@ gem 'stripe'
 gem 'brakeman'
 
 gem 'dalli'
+
+gem 'redis-rails'
+
+gem 'newrelic_rpm'
