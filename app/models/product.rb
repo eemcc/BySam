@@ -23,4 +23,12 @@ class Product < ApplicationRecord
     comments.rating_asc.first
   end
 
+  def views
+    $redis.get("product:#{id}")
+  end
+
+  def viewed!
+    $redis.incr("product:#{id}") 
+  end
+
 end
