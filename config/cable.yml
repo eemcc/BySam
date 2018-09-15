@@ -6,6 +6,5 @@ test:
 
 production:
   adapter: postgresql
-  url: postgres://kukauvxzauamst:ca41c236f360b6c2f83d1dd227a22d9e84a9712371414dd45
-  47f067285a72798@ec2-23-21-162-90.compute-1.amazonaws.com:5432/db38r5f1bvsbpe
+  url: postgres://kukauvxzauamst:ca41c236f360b6c2f83d1dd227a22d9e84a9712371414dd4547f067285a72798@ec2-23-21-162-90.compute-1.amazonaws.com:5432/db38r5f1bvsbpe
   channel_prefix: BySam_production
