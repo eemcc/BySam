@@ -6,7 +6,7 @@ describe Order do
     let(:user) { FactoryBot.create(:user) }
 
     before do
-      product.order.create!(product:"White Monkeys Fist")
+      product.orders.create!(product:"White Monkeys Fist")
     end
 
     it "is not valid" do

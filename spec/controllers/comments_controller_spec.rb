@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe CommentsController, type: :controller do
 
-  describe "GET #index" do
+  describe "get #index" do
     it "returns http success" do
       get :index
       expect(response).to have_http_status(:success)
