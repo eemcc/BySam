@@ -1,25 +1,30 @@
 require 'rails_helper'
 
 describe Comment do
-  context "when a new comment is created" do
-    it "is  valid with a product, user, body and numeric rating" do
-      expect(FactoryBot.build(:comment)).to be_valid
-    end
+  context "when comment has no user" do
+    let(:product) { Product.create!(name: "White Monkeys Fist") }
+    let(:user) { FactoryBot.create(:user) }
 
-    it "is not valid without a user" do
-      expect(FactoryBot.build(:comment, user: nil)).not_to be_valid
+    it "is not valid" do
+      expect(Comment.new(product:product, rating: 4, body: "good")).not_to be_valid
     end
+  end
 
-    it "is not valid without a product" do
-      expect(FactoryBot.build(:comment, product: nil)).not_to be_valid
-    end
+  context "when comment has no body" do
+    let(:product) { Product.create!(name: "White Monkeys Fist") }
+    let(:user) { FactoryBot.create(:user) }
 
-    it "is not valid without a rating" do
-      expect(FactoryBot.build(:comment, rating: nil)).not_to be_valid
+    it "is not valid" do
+      expect(Comment.new(product:product, rating: 4, user: user)).not_to be_valid
     end
+  end
 
-    it "is not valid without a numeric rating" do
-      expect(FactoryBot.build(:comment, rating: "four")).not_to be_valid
-    end
+  context "when comment has no rating" do
+      let(:product) { Product.create!(name: "White Monkeys Fist") }
+      let(:user) { FactoryBot.create(:user) }
+
+      it "is not valid" do
+        expect(Comment.new(product:product, body: "good", user: user)).not_to be_valid
+      end
   end
 end
